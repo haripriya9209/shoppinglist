@@ -37,9 +37,18 @@ addlist.addEventListener("keypress", function(event){
 })
 
 //deleting item
-for(let i=0; i<del.length; i++){
+for(let i=0; i<li_item.length; i++){
     del[i].addEventListener("click", function(){
         console.log(i);
         li_item[i].classList.add("add-item");
     })
+}
+
+//strike item
+for(let i=0; i< li_item.length; i++){
+    console.log("hai");
+    li_item[i].addEventListener("click", function(){
+        li_item[i].classList.toggle("strike");
+    })
+    
 }

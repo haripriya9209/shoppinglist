@@ -32,3 +32,6 @@ body{
 .add-item{
     display: none;
 }
+.strike{
+    text-decoration:line-through;
+}
