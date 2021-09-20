@@ -35,3 +35,6 @@ body{
 .strike{
     text-decoration:line-through;
 }
+p{
+    text-align: center;
+}

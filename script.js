@@ -9,8 +9,17 @@ var del = document.getElementsByClassName("btn-del");
 //adding items
 function addlistitem(){
     var li = document.createElement("li");
-    li.append(document.createTextNode(addlist.value));
+    var del_button = document.createElement("button");
+    li.append(document.createTextNode(addlist.value+" "));
+    del_button.append(document.createTextNode("delete"));
     ul.append(li);
+    li.append(del_button);
+    li.addEventListener("click", function(){
+        li.classList.toggle("strike");
+    })
+    del_button.addEventListener("click", function(){
+        li.classList.add("add-item");
+    })
     addlist.value = "";
 }
 
