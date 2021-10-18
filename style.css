@@ -23,7 +23,7 @@ body{
     font-size: 16px;
     padding: 4px;
     padding-bottom: 5px;
-    margin-right: 10px;
+    margin-right: 7px;
 }
 #error{
     font-size: 16px;
@@ -44,7 +44,7 @@ p{
     text-align: center;
 }
 .add{
-    margin-right: 10px;
+    margin-right: 7px;
     background-color: #3a3af3;
     color: white;
     border-radius: 6px;
