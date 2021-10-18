@@ -5,21 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShoppingList</title>
-    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="bag.svg" type="image/x-icon">
     <!-- <i class="fas fa-shopping-bag"></i> -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="load()" class="background">
     <div class="inside">
         <h1>Shopping List</h1>
         <p>Add your shopping list here:</p>
 
         <div class="sameline">
             <input type="text" placeholder="add items here" class="additem" id="addlist">
-            <button id="add">Add</button>
+            <button class="add" id="add">Add</button>
+            <button class="delAll" id="delAll">Delete All</button>
         </div>
-
+        
         <span id="error"></span>
         <ul id="list">
             <!-- <li class="present">Carrots
@@ -35,8 +36,8 @@
                 <button class="btn-del">delete</button>
             </li> -->
         </ul>
-        <p>*If you dont want any item to be added in the list, then you can delete from the shopping list</p>
-        <p>*If you are done buying the item, then you can strike off the product from the list</p>
+        <p>*If you dont want any item to be added into the list or done buying the item, then you can delete the item from the shopping list</p>
+        <!-- <p>*If you are , then you can strike off the product from the list</p> -->
     </div>
     <script src="script.js"></script>
 </body>
