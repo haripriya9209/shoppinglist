@@ -1,6 +1,10 @@
 body{
     font-size: 20px;
     background-color: aliceblue;
+    background-image: url("./bg.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    /* transform: rotate(180deg); */
 }
 
 .inside{
@@ -13,13 +17,13 @@ body{
     margin: auto;
     max-width: 500px;
     margin-top: 5% ;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius:10px;
 }
 .additem{
     font-size: 16px;
     padding: 4px;
     padding-bottom: 5px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 #error{
     font-size: 16px;
@@ -38,4 +42,36 @@ body{
 }
 p{
     text-align: center;
+}
+.add{
+    margin-right: 10px;
+    background-color: #3a3af3;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.add:hover{
+    background-color: #0d0dd7;
+}
+.delAll{
+    background-color: #e54e4e;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.delAll:hover{
+    background-color: #cd4d4d;
+}
+.fa{
+    color: #e54e4e;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.fa:hover{
+    color: #cd4d4d;;
+}
+.fontWeigth{
+    font-weight: 600;
+    letter-spacing: 0.02em;
 }
